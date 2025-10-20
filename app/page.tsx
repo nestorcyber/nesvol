@@ -26,7 +26,7 @@ const experiences = [
     description:
       "Collaborated with the AWS community team, supporting event organization and attendee engagement. Focused on creative coordination and smooth event flow.",
     images: [
-      "/aws-community-event.jpg",
+      "/aws-team-moment.jpg",
       "/tech-conference-networking.jpg",
       "/aws-workshop-attendees.jpg",
       "/cloud-computing-event.jpg",
