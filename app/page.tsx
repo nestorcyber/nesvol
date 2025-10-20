@@ -27,9 +27,9 @@ const experiences = [
       "Collaborated with the AWS community team, supporting event organization and attendee engagement. Focused on creative coordination and smooth event flow.",
     images: [
       "/aws-team-moment.jpg",
-      "/tech-conference-networking.jpg",
-      "/aws-workshop-attendees.jpg",
-      "/cloud-computing-event.jpg",
+      "/aws-team-csc.jpg",
+      "/aws-team.jpg",
+      "/aws-me.jpg",
     ],
   },
   {
