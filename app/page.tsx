@@ -47,7 +47,7 @@ const experiences = [
     images: [
       "/bwai-team.jpg",
       "/bwai-me.jpg",
-      "/bwai-imma.png",
+      "/bwai-imma.jpg",
       "/bwai-i.jpg",
     ],
   },
