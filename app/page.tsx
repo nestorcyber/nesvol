@@ -57,9 +57,9 @@ const experiences = [
       "Participated in Tech Nexus, a dynamic tech community event at FUTO, contributing to event design and community engagement. Collaborated with fellow developers and designers to create an inspiring learning environment.",
     images: [
       "/tech-nexus-team.jpg",
-      "/developer-community-gathering.jpg",
-      "/tech-workshop-session.jpg",
-      "/networking-event.jpg",
+      "/tech-nexus-me.jpg",
+      "/tech-nexus-csc.jpg",
+      "/tech-nexus-godfirst.jpg",
     ],
   },
 ]
