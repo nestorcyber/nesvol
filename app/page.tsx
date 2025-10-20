@@ -15,7 +15,11 @@ const experiences = [
     date: "October 11, 2025",
     description:
       "An inspiring experience supporting the Gida Skillup Tour in Owerri — helping with coordination and design to empower young learners through digital creativity.",
-    images: ["/gida-group-photo.jpg", "/gida-team-moment.jpg", "/gida-large-group.jpg", "/gida-casual-moment.jpg"],
+    images: [
+      "/gida-group-photo.jpg", 
+      "/gida-team-moment.jpg", 
+      "/gida-large-group.jpg", 
+      "/gida-casual-moment.jpg"],
   },
   {
     id: 2,
@@ -41,10 +45,10 @@ const experiences = [
     description:
       "Contributing to Build With AI 2025 through design and photography, capturing and creating visual content for the Google Developer group Owerri community. Focused on storytelling and showcasing innovation in AI-driven projects.",
     images: [
-      "/google-developer-group-event.jpg",
-      "/gdg-community-meetup.jpg",
-      "/developer-conference.png",
-      "/tech-community-gathering.jpg",
+      "/bwai-team.jpg",
+      "/bwai-me.jpg",
+      "/bwai-imma.png",
+      "/bwai-i.jpg",
     ],
   },
   {
