@@ -46,9 +46,9 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 
   return (
     <Card className="overflow-hidden border-0 shadow-lg bg-white h-full flex flex-col">
-      {/* Hero Image Carousel */}
+      {/* Hero Image Carousel - Increased height for more square aspect ratio */}
       <div
-        className="relative h-64 md:h-72 w-full overflow-hidden group"
+        className="relative h-96 w-full overflow-hidden group"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
