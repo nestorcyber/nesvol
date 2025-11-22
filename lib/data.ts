@@ -38,21 +38,11 @@ export const experiences = [
     id: 14,
     title: "DevFest Owerri 2025",
     organization: "Google Developer Groups Owerri",
-    role: "Organizer & Speaker",
+    role: "Organizer, Speaker & Design Team",
     date: "November 2025",
     description:
-      "Helped organize and lead sessions at the largest developer festival in South-East Nigeria. Engaged with the community, shared knowledge, and contributed to the success of the event through active participation and leadership.",
+      "Played a key role in organizing, designing, and speaking at the largest developer festival in South-East Nigeria. Engaged with the community, crafted visual assets, and contributed to the success of the event through active participation and leadership.",
     images: ["/devfest25-1.jpg", "/devfest25-2.jpg", "/devfest25-3.jpg", "/devfest25-4.jpg"],
-  },
-  {
-    id: 8,
-    title: "DevFest Owerri 2025 (Organizing)",
-    organization: "Google Developer Groups Owerri",
-    role: "Design Team & Organizing Team",
-    date: "November 15, 2025",
-    description:
-      "Played a key role in the Design and Organizing teams for DevFest Owerri 2025. Crafted visual assets and helped coordinate the largest developer gathering in the region.",
-    images: ["/devfest-event.jpg", "/tech-community.jpg", "/developer-conference.jpg", "/google-developer-groups.jpg"],
   },
   {
     id: 7,
@@ -98,26 +88,11 @@ export const experiences = [
     id: 13,
     title: "FUTO Alumni Homecoming 2025",
     organization: "FUTO Alumni",
-    role: "Media Team",
+    role: "Media Team & Photography",
     date: "August 2025",
     description:
       "Served on the Media Team for the FUTO Alumni Homecoming 2025. Managed live streaming setups (OBS), stage photography, and documented the grand reunion of alumni.",
     images: ["/futo-3.jpg", "/futo-1.jpg", "/futo-4.jpg", "/futo-2.jpg"],
-  },
-  {
-    id: 6,
-    title: "FUTO Alumni Homecoming 2025 (Previous)",
-    organization: "FUTO Alumni",
-    role: "Media and Photography",
-    date: "August 15, 2025",
-    description:
-      "Captured the spirit of reunion at the FUTO Alumni Homecoming. Documented memorable moments and connected with alumni through photography and media coverage.",
-    images: [
-      "/alumni-event.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
   },
   {
     id: 3,

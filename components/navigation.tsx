@@ -2,16 +2,19 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { usePathname, useRouter } from "next/navigation" // Imported usePathname and useRouter
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const pathname = usePathname() // Get current path
+  const router = useRouter() // Get router
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Experiences", href: "#experiences" },
-    { label: "About", href: "#about" },
+    { label: "Home", href: "/#home" }, // Updated to absolute paths with hash
+    { label: "Experiences", href: "/experiences" }, // Pointing to the new experiences page
+    { label: "About", href: "/#about" }, // Updated to absolute paths with hash
   ]
 
   useEffect(() => {
@@ -35,9 +38,21 @@ export default function Navigation() {
 
   const scrollToSection = (href: string) => {
     setIsOpen(false)
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+
+    if (href.startsWith("/#")) {
+      // It's a hash link to the home page
+      const elementId = href.replace("/#", "")
+      if (pathname === "/") {
+        const element = document.getElementById(elementId)
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" })
+        }
+      } else {
+        router.push(href)
+      }
+    } else {
+      // It's a normal page link
+      router.push(href)
     }
   }
 
@@ -49,7 +64,10 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo on the left */}
-        <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+        <div
+          onClick={() => router.push("/")}
+          className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center cursor-pointer"
+        >
           <span className="text-white font-black text-xl">NA</span>
         </div>
 
