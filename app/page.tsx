@@ -1,4 +1,3 @@
-"use client"
 import HeroSection from "@/components/hero-section"
 import ExperienceCard from "@/components/experience-card"
 import AboutSection from "@/components/about-section"
@@ -17,11 +16,11 @@ export default function Home() {
   return (
     <>
       <main className="min-h-screen bg-background">
-        <div id="home">
+        <section id="home" aria-label="Introduction">
           <HeroSection />
-        </div>
+        </section>
 
-        <section id="experiences" className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <section id="experiences" className="py-20 px-4 md:px-8 max-w-7xl mx-auto" aria-label="Selected experiences">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-6">
               Selected Highlights
@@ -50,15 +49,15 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="about">
+        <section id="about" aria-label="About Nestor">
           <AboutSection />
-        </div>
+        </section>
 
         <SkillsSection />
 
-        <div id="contact">
+        <section id="contact" aria-label="Contact information">
           <ContactSection />
-        </div>
+        </section>
 
         <Footer />
       </main>
