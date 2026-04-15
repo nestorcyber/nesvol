@@ -96,7 +96,7 @@ export default function HeaderDrawer() {
       {/* Drawer Overlay */}
       {isDrawerOpen && (
         <div
-          className="fixed inset-0 bg-black/40 z-30 transition-opacity duration-300"
+          className="fixed inset-0 bg-black/40 z-20 transition-opacity duration-300"
           onClick={closeDrawer}
           aria-hidden="true"
         />
@@ -104,7 +104,7 @@ export default function HeaderDrawer() {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-screen w-full max-w-xs bg-background z-30 transition-transform duration-300 ease-in-out transform overflow-y-auto ${
+        className={`fixed top-0 left-0 h-screen w-full max-w-xs bg-background z-40 transition-transform duration-300 ease-in-out transform overflow-y-auto ${
           isDrawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
