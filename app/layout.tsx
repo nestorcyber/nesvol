@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import HeaderDrawer from "@/components/header-drawer"
+import Navigation from "@/components/navigation"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -116,7 +116,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
-        <HeaderDrawer />
+        <Navigation />
         {children}
         <Analytics />
       </body>

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function ExperiencesPage() {
   return (
-    <div className="min-h-screen bg-background pt-16">
+    <div className="min-h-screen bg-background">
       <main className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="mb-12">
           <Link href="/" className="inline-block mb-6">
