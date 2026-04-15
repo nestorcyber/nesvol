@@ -12,9 +12,12 @@ export default function Navigation() {
   const router = useRouter() // Get router
 
   const navItems = [
-    { label: "Home", href: "/#home" }, // Updated to absolute paths with hash
-    { label: "Experiences", href: "/experiences" }, // Pointing to the new experiences page
-    { label: "About", href: "/#about" }, // Updated to absolute paths with hash
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Work", href: "/experience" },
+    { label: "Projects", href: "/projects" },
+    { label: "Volunteering", href: "/volunteering" },
+    { label: "Contact", href: "/contact" },
   ]
 
   useEffect(() => {
@@ -38,22 +41,7 @@ export default function Navigation() {
 
   const scrollToSection = (href: string) => {
     setIsOpen(false)
-
-    if (href.startsWith("/#")) {
-      // It's a hash link to the home page
-      const elementId = href.replace("/#", "")
-      if (pathname === "/") {
-        const element = document.getElementById(elementId)
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" })
-        }
-      } else {
-        router.push(href)
-      }
-    } else {
-      // It's a normal page link
-      router.push(href)
-    }
+    router.push(href)
   }
 
   return (

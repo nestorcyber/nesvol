@@ -1,62 +1,63 @@
 import HeroSection from "@/components/hero-section"
-import ExperienceCard from "@/components/experience-card"
-import AboutSection from "@/components/about-section"
 import Footer from "@/components/footer"
-import SkillsSection from "@/components/skills-section"
-import ContactSection from "@/components/contact-section"
-import { experiences } from "@/lib/data"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export default function Home() {
-  const highlightedIds = [14, 13, 2, 1] // IDs for DevFest 25, Futo 25, AWS, Gida
-  const highlightedExperiences = experiences.filter((exp) => highlightedIds.includes(exp.id))
-
   return (
     <>
       <main className="min-h-screen bg-background">
-        <section id="home" aria-label="Introduction">
+        <section aria-label="Introduction">
           <HeroSection />
         </section>
 
-        <section id="experiences" className="py-20 px-4 md:px-8 max-w-7xl mx-auto" aria-label="Selected experiences">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-6">
-              Selected Highlights
+        <section className="py-20 px-4 md:px-8 max-w-5xl mx-auto" aria-label="Navigation to main sections">
+          <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-12 md:p-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              Explore My Journey
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
-              A glimpse into my journey of community building and impact.
+            <p className="text-xl text-slate-600 mb-10 max-w-2xl font-medium">
+              Discover my work, volunteering experiences, and community impact across technology and entrepreneurship.
             </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Link href="/about">
+                <Button className="w-full h-auto py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-xl flex items-center justify-between group transition-all hover:shadow-lg">
+                  <span>About Me</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+
+              <Link href="/experience">
+                <Button className="w-full h-auto py-4 px-6 bg-slate-900 hover:bg-slate-800 text-white text-lg font-bold rounded-xl flex items-center justify-between group transition-all hover:shadow-lg">
+                  <span>Work Experience</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+
+              <Link href="/projects">
+                <Button className="w-full h-auto py-4 px-6 bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-bold rounded-xl flex items-center justify-between group transition-all hover:shadow-lg">
+                  <span>Projects</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+
+              <Link href="/volunteering">
+                <Button className="w-full h-auto py-4 px-6 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-xl flex items-center justify-between group transition-all hover:shadow-lg">
+                  <span>Volunteering</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+
+              <Link href="/contact">
+                <Button className="w-full h-auto py-4 px-6 bg-amber-600 hover:bg-amber-700 text-white text-lg font-bold rounded-xl flex items-center justify-between group transition-all hover:shadow-lg">
+                  <span>Contact</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {highlightedExperiences.map((exp) => (
-              <ExperienceCard key={exp.id} experience={exp} />
-            ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Link href="/experiences">
-              <Button
-                size="lg"
-                className="rounded-full text-lg px-8 py-6 bg-slate-900 hover:bg-slate-800 text-white font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-              >
-                View All Experiences
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-          </div>
-        </section>
-
-        <section id="about" aria-label="About Nestor">
-          <AboutSection />
-        </section>
-
-        <SkillsSection />
-
-        <section id="contact" aria-label="Contact information">
-          <ContactSection />
         </section>
 
         <Footer />
