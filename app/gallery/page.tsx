@@ -1,9 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import Footer from "@/components/footer"
 import { experiences } from "@/lib/data"
-import type { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Gallery - Volunteering & Community",
   description: "Visual collection of moments from volunteering experiences, events, and projects.",
 }
