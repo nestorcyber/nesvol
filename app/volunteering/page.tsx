@@ -16,17 +16,17 @@ export default function VolunteeringPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
               Volunteering & Community
             </h1>
-            <p className="text-xl md:text-2xl text-foreground font-medium max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-lg text-foreground font-medium max-w-3xl leading-relaxed">
               Every volunteering experience I&apos;ve had tells a story of collaboration, creativity, and community impact. Here&apos;s a look at the moments that shaped my journey.
             </p>
           </div>
 
           {/* FLE Conference Section */}
           <section className="mb-20 pb-20 border-b border-border">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-8">
+            <h2 className="text-2xl font-serif font-600 text-primary mb-8">
               Faith, Life, Leadership & Entrepreneurship (FLE) Conference
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

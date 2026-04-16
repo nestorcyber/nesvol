@@ -63,10 +63,10 @@ export default function ProjectsPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
               Featured Projects
             </h1>
-            <p className="text-xl text-foreground font-medium max-w-2xl">
+            <p className="text-lg text-foreground font-medium max-w-2xl">
               A selection of key projects that showcase my work in design, event coordination, and community building across technology and entrepreneurship.
             </p>
           </div>

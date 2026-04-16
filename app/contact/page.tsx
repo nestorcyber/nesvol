@@ -53,10 +53,10 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-6">
+            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
               Get In Touch
             </h1>
-            <p className="text-xl text-slate-600 font-medium max-w-2xl">
+            <p className="text-lg text-foreground font-medium max-w-2xl">
               I&apos;d love to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hello—feel free to reach out.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Methods */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Contact Methods</h2>
+              <h2 className="text-2xl font-serif font-600 text-primary mb-8">Contact Methods</h2>
               
               <div className="space-y-6">
                 {/* Email */}
@@ -149,7 +149,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Send a Message</h2>
+              <h2 className="text-2xl font-serif font-600 text-primary mb-8">Send a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>

@@ -114,17 +114,17 @@ export default function ExperiencePage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
               Work Experience & Leadership
             </h1>
-            <p className="text-xl text-foreground font-medium max-w-2xl">
+            <p className="text-lg text-foreground font-medium max-w-2xl">
               A comprehensive timeline of professional roles, projects, and community contributions.
             </p>
           </div>
 
           {/* Work Experience Section */}
           <section className="mb-20">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-10">Professional Experience</h2>
+            <h2 className="text-2xl font-serif font-600 text-primary mb-10">Professional Experience</h2>
             <div className="space-y-6">
               {workExperience.map((exp, idx) => (
                 <Card
@@ -153,7 +153,7 @@ export default function ExperiencePage() {
 
           {/* Memberships Section */}
           <section>
-            <h2 className="text-4xl font-serif font-bold text-primary mb-10">Professional Memberships</h2>
+            <h2 className="text-2xl font-serif font-600 text-primary mb-10">Professional Memberships</h2>
             <div className="space-y-6">
               {memberships.map((member, idx) => (
                 <Card
