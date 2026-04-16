@@ -25,12 +25,12 @@ export default function Navigation() {
   return (
     <>
       {/* Header - Fixed at top, never hides */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 lg:px-16 bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 lg:px-16 bg-primary border-b border-primary">
         <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
           {/* Logo on the left */}
           <button
             onClick={() => router.push("/")}
-            className="text-primary font-serif font-bold text-xl hover:text-accent transition-colors"
+            className="text-secondary font-sans font-semibold text-lg hover:text-accent transition-colors"
           >
             NA
           </button>
@@ -44,7 +44,7 @@ export default function Navigation() {
                   setIsOpen(false)
                   router.push(item.href)
                 }}
-                className="text-foreground hover:text-accent transition-colors font-medium text-sm"
+                className="text-secondary hover:text-accent transition-colors font-medium text-sm"
               >
                 {item.label}
               </button>
@@ -54,10 +54,10 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-accent/20 transition-colors"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} className="text-primary" /> : <Menu size={24} className="text-primary" />}
+            {isOpen ? <X size={24} className="text-secondary" /> : <Menu size={24} className="text-secondary" />}
           </button>
         </div>
       </nav>
@@ -73,37 +73,39 @@ export default function Navigation() {
 
       {/* Side Drawer - slides in from left */}
       <div
-        className={`fixed top-0 left-0 h-screen w-4/5 max-w-xs bg-background z-50 transition-transform duration-300 ease-in-out transform overflow-y-auto border-r border-border md:hidden ${
+        className={`fixed top-0 left-0 h-screen w-4/5 max-w-xs bg-primary z-50 transition-transform duration-300 ease-in-out transform overflow-y-auto border-r border-primary md:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* Close button */}
-        <div className="flex items-center justify-between p-4 border-b border-border">
+        <div className="flex items-center justify-between p-4 border-b border-secondary/20">
           <button
             onClick={() => router.push("/")}
-            className="text-primary font-serif font-bold text-xl hover:text-accent transition-colors"
+            className="text-secondary font-sans font-semibold text-lg hover:text-accent transition-colors"
           >
             NA
           </button>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-2 rounded-lg hover:bg-muted transition-colors"
+            className="p-2 rounded-lg hover:bg-accent/20 transition-colors"
             aria-label="Close menu"
           >
-            <X size={24} className="text-primary" />
+            <X size={24} className="text-secondary" />
           </button>
         </div>
 
         {/* Menu items */}
-        <nav className="p-4 space-y-1">
-          {navItems.map((item) => (
+        <nav className="p-0">
+          {navItems.map((item, index) => (
             <button
               key={item.label}
               onClick={() => {
                 setIsOpen(false)
                 router.push(item.href)
               }}
-              className="block w-full text-left px-4 py-3 rounded-lg text-foreground hover:bg-muted hover:text-primary transition-colors font-medium text-sm"
+              className={`block w-full text-left px-4 py-3 text-secondary hover:bg-accent/10 transition-colors font-medium text-sm ${
+                index < navItems.length - 1 ? "border-b border-secondary/20" : ""
+              }`}
             >
               {item.label}
             </button>
