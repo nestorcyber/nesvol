@@ -22,7 +22,27 @@ export const experiences = [
     date: "November 29, 2025",
     description:
       "Contributed to the success of the Edensprime Hospitality Summit through dedicated event setup and coordination, ensuring a welcoming and professional atmosphere for all attendees.",
-    images: ["/hospitality-event.jpg", "/event-setup.jpg", "/conference-hall.jpg", "/team-work.jpg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eden2-sUzI0wvGmZMjB5UUP911IAB6WvBM5c.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eden3%280%29-Md3eT61Brp60MhmfTcGcfxvEaFIHqs.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eden5-LDykBdjx1JiJvGYDIdliITuBi0V8Ke.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eden1-iePEIbrkoW7wba4cbBoCLfkFEsqQTU.jpg",
+    ],
+  },
+  {
+    id: 10,
+    title: "FUTO Alumni Homecoming 2025",
+    organization: "FUTO Alumni",
+    role: "Media and Photography",
+    date: "August 15, 2025",
+    description:
+      "Captured the memorable moments from FUTO Alumni Homecoming 2025 through professional media and photography. Documented the celebration, networking, and community bonding of alumni, creating lasting memories of this important gathering.",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f4%280%29-e7Yahcsw3qQbcQLNweaiCS5rzoAVvv.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f3%280%29-0OUNedcByaDnTaTWc7tAWWQQ2E60ff.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f2%280%29-pBS7ttoTwcS5IQq7BxPQga9W14pDXS.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f1%280%29-wdxseBoOzK6wN6TpiXjYnUVh67MS1C.jpg",
+    ],
   },
   {
     id: 9,
@@ -32,7 +52,12 @@ export const experiences = [
     date: "November 22, 2025",
     description:
       "Supported the FLE Conference by managing event setup logistics. Worked behind the scenes to create a seamless environment for leadership and entrepreneurship discussions.",
-    images: ["/leadership-conference.jpg", "/stage-setup.jpg", "/event-planning.jpg", "/conference-crowd.jpg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle3%280%29-CFKUWQDj8dfMZ5zkDTF9IEEXC6zDID.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle2%280%29-FfRbgx2cSla1HuEuvaPzlOe8rKfEcm.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle4-n7IdoFLGvctWYMK2ZspbSaqYEJz6n7.jpg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle1%280%29-RFztiDFA8wlZ5TUikrNKon6EVYY0te.jpg",
+    ],
   },
   {
     id: 14,

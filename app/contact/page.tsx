@@ -53,10 +53,10 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
               Get In Touch
             </h1>
-            <p className="text-xl text-slate-600 font-medium max-w-2xl">
+            <p className="text-lg text-foreground font-medium max-w-2xl">
               I&apos;d love to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hello—feel free to reach out.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Methods */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Contact Methods</h2>
+              <h2 className="text-3xl font-sans font-bold text-primary mb-8">Contact Methods</h2>
               
               <div className="space-y-6">
                 {/* Email */}
@@ -83,7 +83,7 @@ export default function ContactPage() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/2347016614444"
+                  href="https://wa.me/2349060900245"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
@@ -93,7 +93,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-lg mb-1">WhatsApp</h3>
-                    <p className="text-slate-600">+234 701 661 4444</p>
+                    <p className="text-slate-600">+234 906 090 0245</p>
                   </div>
                 </a>
 
@@ -115,7 +115,7 @@ export default function ContactPage() {
 
                 {/* Twitter */}
                 <a
-                  href="https://twitter.com/nestoranyanwu"
+                  href="https://twitter.com/nestorcyber"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-lg mb-1">Twitter/X</h3>
-                    <p className="text-slate-600">@nestoranyanwu</p>
+                    <p className="text-slate-600">@nestorcyber</p>
                   </div>
                 </a>
 
@@ -149,7 +149,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Send a Message</h2>
+              <h2 className="text-3xl font-sans font-bold text-primary mb-8">Send a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>

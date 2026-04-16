@@ -14,80 +14,29 @@ export default function VolunteeringPage() {
     <>
       <main className="min-h-screen bg-background pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          {/* Header */}
+          {/* Header with Image */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-6">
-              Volunteering &{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Community Impact
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-700 font-medium max-w-3xl leading-relaxed">
-              A journey of service, leadership, and impact through event organization, community building, and meaningful contributions to technology and entrepreneurship initiatives across Nigeria.
-            </p>
-          </div>
-
-          {/* FLE Conference Section */}
-          <section className="mb-20 pb-20 border-b border-slate-200">
-            <h2 className="text-4xl font-bold text-slate-900 mb-8">
-              Faith, Life, Leadership & Entrepreneurship (FLE) Conference
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  The Faith, Life, Leadership & Entrepreneurship (FLE) Conference represents one of my most significant volunteering experiences. This transformative event brought together young leaders, entrepreneurs, and innovators to discuss critical topics in personal development, business growth, and community impact.
+                <h1 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
+                  Volunteering & Community
+                </h1>
+                <p className="text-lg text-foreground font-medium max-w-2xl leading-relaxed">
+                  Every volunteering experience tells a story of collaboration, creativity, and community impact. Here&apos;s a look at the moments that shaped my journey.
                 </p>
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  Through active participation in event setup, coordination, and support, I contributed to creating an inspiring environment where hundreds of participants could network, learn, and grow. The experience reinforced my commitment to community building and the power of bringing people together around shared values.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Event Setup</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Coordination</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Community Building</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Leadership</span>
-                </div>
               </div>
-              <div className="flex flex-col gap-4">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle3%280%29-CFKUWQDj8dfMZ5zkDTF9IEEXC6zDID.jpg"
-                  alt="FLE Conference team photo with attendees"
-                  width={500}
-                  height={400}
-                  className="rounded-lg object-cover w-full h-64 md:h-72"
-                />
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle2%280%29-FfRbgx2cSla1HuEuvaPzlOe8rKfEcm.jpg"
-                  alt="Receiving FLE Festival 2.0 certificate of appreciation"
-                  width={500}
-                  height={400}
-                  className="rounded-lg object-cover w-full h-64 md:h-72"
-                />
-              </div>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-4">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle4-n7IdoFLGvctWYMK2ZspbSaqYEJz6n7.jpg"
-                alt="Speaking and engaging with audience at FLE event"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover w-full md:w-1/2 h-64"
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle1%280%29-RFztiDFA8wlZ5TUikrNKon6EVYY0te.jpg"
-                alt="Audience engagement at FLE conference"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover w-full md:w-1/2 h-64"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vol-ehxuFInSlnE81JZZijj6Bgoz9s2kcW.jpeg"
+                alt="Volunteer Portfolio"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover w-full h-auto"
               />
             </div>
-          </section>
+          </div>
 
           {/* All Experiences Section */}
           <section>
-            <h2 className="text-4xl font-bold text-slate-900 mb-10">All Volunteering Experiences</h2>
-            <p className="text-lg text-slate-600 mb-12 max-w-2xl">
-              Below is a comprehensive collection of my volunteering experiences, including event coordination, media coverage, design contributions, and active participation in community-building initiatives.
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {experiences.map((exp) => (
                 <ExperienceCard key={exp.id} experience={exp} />
