@@ -13,16 +13,16 @@ export default function AboutPage() {
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           {/* Hero Section */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-tight">
+            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-8 leading-tight">
               About Nestor
             </h1>
-            <p className="text-xl md:text-2xl text-slate-700 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-foreground font-medium leading-relaxed">
               A passionate tech advocate, ingenious designer, and community builder dedicated to creating meaningful impact through service, innovation, and leadership.
             </p>
           </div>
 
           {/* Main Content - Editorial Style */}
-          <div className="prose prose-lg max-w-none text-slate-800">
+          <div className="space-y-8 text-foreground max-w-none">
             <p className="text-lg leading-relaxed mb-8">
               As a highly innovative, detail-oriented, and tech-savvy professional, I bring a unique blend of creativity, strategic thinking, and hands-on expertise to every endeavor. My journey has been defined by a commitment to excellence, community impact, and continuous growth in the rapidly evolving technology landscape.
             </p>
@@ -31,7 +31,7 @@ export default function AboutPage() {
               With over 4 years of professional experience across multiple domains—from graphic design to virtual assistance, from IT consulting to community leadership—I have developed a comprehensive understanding of how technology, design, and human connection intersect. My professional foundation is built on a philosophy that technology should serve humanity, and that design should communicate with clarity and purpose.
             </p>
 
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900 mt-12 mb-6">Professional Expertise</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mt-12 mb-6">Professional Expertise</h2>
 
             <p className="text-lg leading-relaxed mb-8">
               My career spans multiple disciplines. As a Graphic Designer, I&apos;ve collaborated with organizations like Nobelton Consults and GDG Owerri to create compelling visual narratives. As a Virtual Assistant, I&apos;ve supported entrepreneurs and organizations with administrative excellence and digital coordination. As an IT Consultant at Nobelton Consults, I&apos;ve helped businesses navigate technological challenges and implement strategic solutions.
@@ -41,7 +41,7 @@ export default function AboutPage() {
               Beyond individual roles, I serve as the Director of Information Communication Technology for both the Nigeria Association of Computing Students (NACOS) National and NACOS Federal University of Technology Owerri Chapter. In these leadership positions, I oversee digital strategy, community engagement, and technological infrastructure that supports thousands of students and professionals.
             </p>
 
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900 mt-12 mb-6">Community & Leadership</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mt-12 mb-6">Community & Leadership</h2>
 
             <p className="text-lg leading-relaxed mb-8">
               My passion for community building is evident through my active involvement with multiple organizations. I serve as Graphic Design Lead for GDG on Campus at FUTO, where I help shape the visual identity and experience of Google Developer Group initiatives. As a member of the Internet Society Nigeria Chapter, I advocate for internet accessibility and digital rights. Through the Fintech Association of Nigeria and The Investment Society FUTO, I contribute to financial literacy and entrepreneurial development.

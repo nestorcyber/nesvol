@@ -114,34 +114,34 @@ export default function ExperiencePage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-4">
-              Work Experience
+            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+              Work Experience & Leadership
             </h1>
-            <p className="text-xl text-slate-600 font-medium max-w-2xl">
+            <p className="text-xl text-foreground font-medium max-w-2xl">
               A comprehensive timeline of professional roles, projects, and community contributions.
             </p>
           </div>
 
           {/* Work Experience Section */}
           <section className="mb-20">
-            <h2 className="text-4xl font-bold text-slate-900 mb-10">Professional Experience</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-10">Professional Experience</h2>
             <div className="space-y-6">
               {workExperience.map((exp, idx) => (
                 <Card
                   key={idx}
-                  className="p-6 md:p-8 border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                  className="p-6 md:p-8 border border-border hover:border-accent transition-colors duration-300 bg-secondary"
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-2">{exp.title}</h3>
-                      <p className="text-lg text-slate-600 font-semibold mb-1">{exp.organization}</p>
-                      <p className="text-sm text-slate-500 font-medium">{exp.duration}</p>
+                      <h3 className="text-2xl font-serif font-bold text-primary mb-2">{exp.title}</h3>
+                      <p className="text-lg text-foreground font-semibold mb-1">{exp.organization}</p>
+                      <p className="text-sm text-muted-foreground font-medium">{exp.duration}</p>
                     </div>
                   </div>
-                  <p className="text-slate-700 leading-relaxed mb-4">{exp.description}</p>
+                  <p className="text-foreground leading-relaxed mb-4">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {exp.details.map((detail, i) => (
-                      <span key={i} className="inline-block px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full font-medium">
+                      <span key={i} className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium">
                         {detail}
                       </span>
                     ))}
@@ -153,7 +153,7 @@ export default function ExperiencePage() {
 
           {/* Memberships Section */}
           <section>
-            <h2 className="text-4xl font-bold text-slate-900 mb-10">Professional Memberships</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-10">Professional Memberships</h2>
             <div className="space-y-6">
               {memberships.map((member, idx) => (
                 <Card

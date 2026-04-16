@@ -16,35 +16,32 @@ export default function VolunteeringPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-6">
-              Volunteering &{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Community Impact
-              </span>
+            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+              Volunteering & Community
             </h1>
-            <p className="text-xl md:text-2xl text-slate-700 font-medium max-w-3xl leading-relaxed">
-              A journey of service, leadership, and impact through event organization, community building, and meaningful contributions to technology and entrepreneurship initiatives across Nigeria.
+            <p className="text-xl md:text-2xl text-foreground font-medium max-w-3xl leading-relaxed">
+              Every volunteering experience I&apos;ve had tells a story of collaboration, creativity, and community impact. Here&apos;s a look at the moments that shaped my journey.
             </p>
           </div>
 
           {/* FLE Conference Section */}
-          <section className="mb-20 pb-20 border-b border-slate-200">
-            <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <section className="mb-20 pb-20 border-b border-border">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-8">
               Faith, Life, Leadership & Entrepreneurship (FLE) Conference
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                <p className="text-lg text-foreground leading-relaxed mb-6">
                   The Faith, Life, Leadership & Entrepreneurship (FLE) Conference represents one of my most significant volunteering experiences. This transformative event brought together young leaders, entrepreneurs, and innovators to discuss critical topics in personal development, business growth, and community impact.
                 </p>
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                <p className="text-lg text-foreground leading-relaxed mb-6">
                   Through active participation in event setup, coordination, and support, I contributed to creating an inspiring environment where hundreds of participants could network, learn, and grow. The experience reinforced my commitment to community building and the power of bringing people together around shared values.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Event Setup</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Coordination</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Community Building</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Leadership</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium">Event Setup</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium">Coordination</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium">Community Building</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium">Leadership</span>
                 </div>
               </div>
               <div className="flex flex-col gap-4">

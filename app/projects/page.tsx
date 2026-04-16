@@ -63,10 +63,10 @@ export default function ProjectsPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-4">
-              Projects
+            <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
+              Featured Projects
             </h1>
-            <p className="text-xl text-slate-600 font-medium max-w-2xl">
+            <p className="text-xl text-foreground font-medium max-w-2xl">
               A selection of key projects that showcase my work in design, event coordination, and community building across technology and entrepreneurship.
             </p>
           </div>
@@ -76,8 +76,32 @@ export default function ProjectsPage() {
             {projects.map((project, idx) => (
               <Card
                 key={idx}
-                className="p-6 md:p-8 border border-slate-200 hover:shadow-lg transition-shadow duration-300 flex flex-col"
+                className="p-6 md:p-8 border border-border hover:border-accent transition-colors duration-300 flex flex-col bg-secondary"
               >
+                <h3 className="text-2xl font-serif font-bold text-primary mb-3">{project.title}</h3>
+                <p className="text-foreground leading-relaxed mb-6 flex-grow">{project.description}</p>
+
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-3 pt-6 border-t border-border">
+                  {project.links.demo && project.links.demo !== "#" && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-primary hover:bg-accent text-white hover:text-primary rounded-lg font-semibold text-sm transition-colors"
+                    >
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">{project.title}</h3>
                 <p className="text-slate-700 leading-relaxed mb-6 flex-grow">{project.description}</p>
 
