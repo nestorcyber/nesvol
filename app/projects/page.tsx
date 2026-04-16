@@ -1,12 +1,10 @@
 import Footer from "@/components/footer"
-import { Card } from "@/components/ui/card"
 import { Metadata } from "next"
-import Link from "next/link"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Explore Nestor&apos;s key projects showcasing design, development, and community initiatives.",
+  description: "Explore Nestor's key projects showcasing design, development, and community initiatives.",
 }
 
 const projects = [
@@ -48,7 +46,7 @@ const projects = [
   },
   {
     title: "Build With AI 2025",
-    description: "Contributed design and photography for Google Developer Group&apos;s AI-focused event, showcasing innovative AI projects and connecting AI enthusiasts.",
+    description: "Contributed design and photography for Google Developer Group's AI-focused event, showcasing innovative AI projects and connecting AI enthusiasts.",
     technologies: ["Graphic Design", "Photography", "Visual Storytelling"],
     links: {
       demo: "https://gdgowerri.com",
@@ -63,7 +61,7 @@ export default function ProjectsPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
               Featured Projects
             </h1>
             <p className="text-lg text-foreground font-medium max-w-2xl">
@@ -74,12 +72,12 @@ export default function ProjectsPage() {
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, idx) => (
-              <Card
+              <div
                 key={idx}
-                className="p-6 md:p-8 border border-border hover:border-accent transition-colors duration-300 flex flex-col bg-secondary"
+                className="p-6 md:p-8 border border-border hover:border-accent transition-colors duration-300 flex flex-col bg-background rounded-lg"
               >
-                <h3 className="text-2xl font-serif font-bold text-primary mb-3">{project.title}</h3>
-                <p className="text-foreground leading-relaxed mb-6 flex-grow">{project.description}</p>
+                <h3 className="text-2xl font-sans font-bold text-primary mb-3">{project.title}</h3>
+                <p className="text-foreground leading-relaxed mb-6 flex-grow font-medium">{project.description}</p>
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -100,49 +98,14 @@ export default function ProjectsPage() {
                       href={project.links.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-primary hover:bg-accent text-white hover:text-primary rounded-lg font-semibold text-sm transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 bg-primary hover:bg-accent text-secondary hover:text-primary rounded-lg font-bold text-sm transition-colors cursor-pointer"
                     >
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">{project.title}</h3>
-                <p className="text-slate-700 leading-relaxed mb-6 flex-grow">{project.description}</p>
-
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="inline-block px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Links */}
-                <div className="flex gap-3 pt-6 border-t border-slate-200">
-                  {project.links.demo && project.links.demo !== "#" && (
-                    <a
-                      href={project.links.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold text-sm transition-colors"
-                    >
-                      <span>Live Demo</span>
+                      <span>Learn More</span>
                       <ExternalLink size={16} />
                     </a>
                   )}
-                  {project.links.github && (
-                    <a
-                      href={project.links.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-semibold text-sm transition-colors"
-                    >
-                      <span>GitHub</span>
-                      <Github size={16} />
-                    </a>
-                  )}
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
