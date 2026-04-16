@@ -12,8 +12,9 @@ export default function Navigation() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Volunteering", href: "/volunteering" },
-    { label: "Work", href: "/experience" },
+    { label: "Experience", href: "/experience" },
     { label: "Projects", href: "/projects" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ]
 
@@ -30,7 +31,7 @@ export default function Navigation() {
           {/* Logo on the left */}
           <button
             onClick={() => router.push("/")}
-            className="text-secondary font-sans font-semibold text-lg hover:text-accent transition-colors"
+            className="text-secondary font-sans font-bold text-xl hover:text-accent transition-colors"
           >
             NA
           </button>
@@ -44,7 +45,7 @@ export default function Navigation() {
                   setIsOpen(false)
                   router.push(item.href)
                 }}
-                className="text-secondary hover:text-accent transition-colors font-medium text-sm"
+                className="text-secondary hover:text-accent transition-colors font-bold text-sm"
               >
                 {item.label}
               </button>
@@ -81,7 +82,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between p-4 border-b border-secondary/20">
           <button
             onClick={() => router.push("/")}
-            className="text-secondary font-sans font-semibold text-lg hover:text-accent transition-colors"
+            className="text-secondary font-sans font-bold text-xl hover:text-accent transition-colors"
           >
             NA
           </button>
@@ -103,7 +104,7 @@ export default function Navigation() {
                 setIsOpen(false)
                 router.push(item.href)
               }}
-              className={`block w-full text-left px-4 py-3 text-secondary hover:bg-accent/10 transition-colors font-medium text-sm ${
+              className={`block w-full text-left px-4 py-3 text-secondary hover:bg-accent/10 transition-colors font-bold text-sm ${
                 index < navItems.length - 1 ? "border-b border-secondary/20" : ""
               }`}
             >
