@@ -53,48 +53,38 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
+            <h1 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-6 uppercase tracking-wide">
               Get In Touch
             </h1>
-            <p className="text-lg text-foreground font-medium max-w-2xl">
-              I&apos;d love to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hello—feel free to reach out.
+            <p className="text-sm md:text-base text-foreground font-medium max-w-2xl">
+              Interested in connecting or collaborating? Reach out through your preferred channel below.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Contact Methods */}
+            {/* Contact Methods - Icon Only */}
             <div>
-              <h2 className="text-3xl font-sans font-bold text-primary mb-8">Contact Methods</h2>
+              <h2 className="text-lg font-sans font-bold text-primary mb-8 uppercase tracking-wide">Connect With Nestor</h2>
               
-              <div className="space-y-6">
+              <div className="flex flex-wrap gap-6">
                 {/* Email */}
                 <a
                   href="mailto:nestoranyanwu@gmail.com"
-                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
+                  className="p-4 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors group"
+                  title="Send an email"
                 >
-                  <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                    <Mail size={24} className="text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-lg mb-1">Email</h3>
-                    <p className="text-slate-600 break-all">nestoranyanwu@gmail.com</p>
-                  </div>
+                  <Mail size={32} className="text-blue-600 group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/2349060900245"
+                  href="https://wa.me/message/GJIXLHQQPYDIE1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
+                  className="p-4 bg-green-100 rounded-lg hover:bg-green-200 transition-colors group"
+                  title="Message on WhatsApp"
                 >
-                  <div className="p-3 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors">
-                    <MessageCircle size={24} className="text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-lg mb-1">WhatsApp</h3>
-                    <p className="text-slate-600">+234 906 090 0245</p>
-                  </div>
+                  <MessageCircle size={32} className="text-green-600 group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* LinkedIn */}
@@ -102,15 +92,10 @@ export default function ContactPage() {
                   href="https://linkedin.com/in/nestoranyanwu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
+                  className="p-4 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors group"
+                  title="Connect on LinkedIn"
                 >
-                  <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                    <Linkedin size={24} className="text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-lg mb-1">LinkedIn</h3>
-                    <p className="text-slate-600">linkedin.com/in/nestoranyanwu</p>
-                  </div>
+                  <Linkedin size={32} className="text-blue-600 group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* Twitter */}
@@ -118,15 +103,10 @@ export default function ContactPage() {
                   href="https://twitter.com/nestorcyber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
+                  className="p-4 bg-sky-100 rounded-lg hover:bg-sky-200 transition-colors group"
+                  title="Follow on X/Twitter"
                 >
-                  <div className="p-3 bg-sky-100 rounded-lg group-hover:bg-sky-200 transition-colors">
-                    <Twitter size={24} className="text-sky-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-lg mb-1">Twitter/X</h3>
-                    <p className="text-slate-600">@nestorcyber</p>
-                  </div>
+                  <Twitter size={32} className="text-sky-600 group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* GitHub */}
@@ -134,22 +114,17 @@ export default function ContactPage() {
                   href="https://github.com/nestorcyber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition-colors group"
+                  className="p-4 bg-slate-100 rounded-lg hover:bg-slate-200 transition-colors group"
+                  title="View GitHub profile"
                 >
-                  <div className="p-3 bg-slate-100 rounded-lg group-hover:bg-slate-200 transition-colors">
-                    <Github size={24} className="text-slate-900" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-lg mb-1">GitHub</h3>
-                    <p className="text-slate-600">github.com/nestorcyber</p>
-                  </div>
+                  <Github size={32} className="text-slate-900 group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-sans font-bold text-primary mb-8">Send a Message</h2>
+              <h2 className="text-lg font-sans font-bold text-primary mb-8 uppercase tracking-wide">Send a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>

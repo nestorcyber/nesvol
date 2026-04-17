@@ -4,12 +4,12 @@ export default function HomeExperiencePreview() {
   return (
     <section className="py-20 md:py-28 px-4 md:px-8 lg:px-16 bg-background">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-sans text-4xl md:text-4xl font-bold text-primary mb-12">Professional Experience</h2>
+        <h2 className="font-sans text-2xl md:text-3xl font-bold text-primary mb-12 uppercase tracking-wide">EXPERIENCE & EXPERTISE</h2>
         
         <NewsCard
           image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eden3%280%29-Md3eT61Brp60MhmfTcGcfxvEaFIHqs.jpg"
-          title="Building Excellence Through Experience"
-          description="With experience in event management, media production, and community leadership, I've contributed to initiatives that reached thousands of people. From developer conferences to entrepreneurship programs, my focus is on excellence and meaningful collaboration."
+          title="CREATING IMPACT AT SCALE"
+          description="Nestor brings diverse experience in software development, IT consulting, event management, and design. His work spans leadership roles, community engagement, and technical expertise, contributing to initiatives that reached thousands."
           href="/experience"
         />
       </div>

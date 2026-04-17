@@ -18,11 +18,11 @@ export default function VolunteeringPage() {
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h1 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
-                  Volunteering & Community
+                <h1 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-6 uppercase tracking-wide">
+                  Volunteering & Community Impact
                 </h1>
-                <p className="text-lg text-foreground font-medium max-w-2xl leading-relaxed">
-                  Every volunteering experience tells a story of collaboration, creativity, and community impact. Here&apos;s a look at the moments that shaped my journey.
+                <p className="text-sm md:text-base text-foreground font-medium max-w-2xl leading-relaxed">
+                  A showcase of meaningful contributions through volunteering, community engagement, and collaborative initiatives that create lasting impact.
                 </p>
               </div>
               <Image
