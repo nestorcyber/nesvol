@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-12">
           {/* Links Section */}
           <div>
-            <h3 className="font-sans text-base font-bold mb-6 text-secondary">Navigation</h3>
+            <h3 className="font-sans text-sm font-bold mb-6 text-secondary uppercase tracking-wide">Navigation</h3>
             <nav className="space-y-3">
               <Link href="/about" className="block text-secondary/80 hover:text-accent transition-colors text-sm font-medium">
                 About
@@ -32,10 +32,10 @@ export default function Footer() {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="font-sans text-base font-bold mb-6 text-secondary">Connect</h3>
+            <h3 className="font-sans text-sm font-bold mb-6 text-secondary uppercase tracking-wide">Connect</h3>
             <div className="space-y-4">
               <a
-                href="https://wa.me/2349060900245"
+                href="https://wa.me/message/GJIXLHQQPYDIE1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-secondary/80 hover:text-accent transition-colors text-sm font-medium"

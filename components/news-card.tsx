@@ -38,7 +38,7 @@ export default function NewsCard({ image, title, description, href }: NewsCardPr
           className="block hover:opacity-75 transition-opacity duration-300"
           {...linkProps}
         >
-          <h3 className="text-3xl md:text-4xl font-sans font-bold text-primary group-hover:text-accent transition-colors duration-300 cursor-pointer">
+          <h3 className="text-2xl md:text-3xl font-sans font-bold text-primary group-hover:text-accent transition-colors duration-300 cursor-pointer uppercase tracking-wide">
             {title}
           </h3>
         </a>
@@ -49,7 +49,7 @@ export default function NewsCard({ image, title, description, href }: NewsCardPr
           className="block hover:opacity-75 transition-opacity duration-300"
           {...linkProps}
         >
-          <p className="text-lg text-foreground font-medium leading-relaxed group-hover:text-muted transition-colors duration-300 cursor-pointer">
+          <p className="text-sm md:text-base text-foreground font-medium leading-relaxed group-hover:text-muted transition-colors duration-300 cursor-pointer">
             {description}
           </p>
         </a>
@@ -57,7 +57,7 @@ export default function NewsCard({ image, title, description, href }: NewsCardPr
         {/* CTA Link */}
         <a
           href={href}
-          className="inline-flex items-center text-primary hover:text-accent transition-colors duration-300 font-bold text-base group/link"
+          className="inline-flex items-center text-primary hover:text-accent transition-colors duration-300 font-bold text-sm group/link"
           {...linkProps}
         >
           Learn More
