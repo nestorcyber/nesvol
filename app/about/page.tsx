@@ -13,115 +13,47 @@ export default function AboutPage() {
         <article className="max-w-4xl mx-auto px-4 md:px-8">
           {/* Hero Section */}
           <div className="mb-16">
-            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6 leading-tight">
-              About Nestor
+            <h1 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-6 leading-tight uppercase tracking-wide">
+              About Nestor Anyanwu
             </h1>
-            <p className="text-lg md:text-lg text-foreground font-medium leading-relaxed">
-              A passionate tech advocate, ingenious designer, and community builder dedicated to creating meaningful impact through service, innovation, and leadership.
+            <p className="text-sm md:text-base text-foreground font-medium leading-relaxed">
+              Nestor Anyanwu is a Nigerian technology professional, software developer, and community leader driven by a vision of building accessible, inclusive, and collaborative tech ecosystems.
             </p>
           </div>
 
           {/* Main Content - Editorial Style */}
-          <div className="space-y-8 text-foreground max-w-none">
-            <p className="text-lg leading-relaxed mb-8">
-              As a highly innovative, detail-oriented, and tech-savvy professional, I bring a unique blend of creativity, strategic thinking, and hands-on expertise to every endeavor. My journey has been defined by a commitment to excellence, community impact, and continuous growth in the rapidly evolving technology landscape.
+          <div className="space-y-6 text-foreground max-w-none">
+            <p className="text-sm leading-relaxed mb-6">
+              Nestor Anyanwu is a Nigerian technology professional, software and web developer, IT consultant, tech advocate, and active volunteer with a growing footprint in student leadership and Africa's digital ecosystem. Widely known within academic and developer communities as "Nestor Cyber," this name is associated with consistent engagement in technology-driven initiatives, community development, and volunteer service across Nigeria's tech landscape.
             </p>
 
-            <p className="text-lg leading-relaxed mb-8">
-              With over 4 years of professional experience across multiple domains—from graphic design to virtual assistance, from IT consulting to community leadership—I have developed a comprehensive understanding of how technology, design, and human connection intersect. My professional foundation is built on a philosophy that technology should serve humanity, and that design should communicate with clarity and purpose.
+            <p className="text-sm leading-relaxed mb-6">
+              Currently serving as the Director of ICT for the National Association of Computing Students (NACOS) at the Federal University of Technology, Owerri, Nestor leads digital strategy, technical operations, and innovation-focused initiatives for the 2025/2026 tenure. In this role, he focuses on improving digital infrastructure, strengthening tech community engagement, and supporting student-led innovation across one of Nigeria's premier technology institutions.
             </p>
 
-            <h2 className="text-2xl font-serif font-600 text-primary mt-12 mb-6">Professional Expertise</h2>
+            <h2 className="text-base font-sans font-bold text-primary mt-10 mb-4 uppercase tracking-wide">Professional Engagement & Leadership</h2>
 
-            <p className="text-lg leading-relaxed mb-8">
-              My career spans multiple disciplines. As a Graphic Designer, I&apos;ve collaborated with organizations like Nobelton Consults and GDG Owerri to create compelling visual narratives. As a Virtual Assistant, I&apos;ve supported entrepreneurs and organizations with administrative excellence and digital coordination. As an IT Consultant at Nobelton Consults, I&apos;ve helped businesses navigate technological challenges and implement strategic solutions.
+            <p className="text-sm leading-relaxed mb-6">
+              Beyond campus leadership, Nestor is actively involved in several professional and industry communities, including the Nigerian Computer Society (NCS), Nigeria Internet Registration Association (NIRA), Internet Society, Fintech Association of Nigeria (FintechNGR), and Google Developer Groups (GDG) Owerri. His involvement reflects consistent commitment to collaboration, knowledge sharing, and advancing technology adoption within Nigeria's growing digital economy.
             </p>
 
-            <p className="text-lg leading-relaxed mb-8">
-              Beyond individual roles, I serve as the Director of Information Communication Technology for both the Nigeria Association of Computing Students (NACOS) National and NACOS Federal University of Technology Owerri Chapter. In these leadership positions, I oversee digital strategy, community engagement, and technological infrastructure that supports thousands of students and professionals.
+            <p className="text-sm leading-relaxed mb-6">
+              Nestor has participated in learning and professional development programs associated with organizations such as ALX Africa, McKinsey, Google, and Microsoft, further strengthening his exposure to global standards in technology, problem-solving, and innovation. These experiences complement his practical work in software development, IT consulting, support, and design.
             </p>
 
-            <h2 className="text-2xl font-serif font-600 text-primary mt-12 mb-6">Community & Leadership</h2>
+            <h2 className="text-base font-sans font-bold text-primary mt-10 mb-4 uppercase tracking-wide">Community Impact & Volunteering</h2>
 
-            <p className="text-lg leading-relaxed mb-8">
-              My passion for community building is evident through my active involvement with multiple organizations. I serve as Graphic Design Lead for GDG on Campus at FUTO, where I help shape the visual identity and experience of Google Developer Group initiatives. As a member of the Internet Society Nigeria Chapter, I advocate for internet accessibility and digital rights. Through the Fintech Association of Nigeria and The Investment Society FUTO, I contribute to financial literacy and entrepreneurial development.
+            <p className="text-sm leading-relaxed mb-6">
+              Nestor is actively engaged in volunteering, contributing his skills to community-driven initiatives, tech events, and capacity-building programs aimed at empowering young people and strengthening local tech ecosystems. His work demonstrates commitment to solving real-world problems through technology, building scalable digital solutions, and contributing to the growth of tech ecosystems within and beyond his academic environment.
             </p>
 
-            <p className="text-lg leading-relaxed mb-8">
-              I also serve as Campus Ambassador for Cowrywise, a financial technology platform, helping young Nigerians develop better financial habits and investment skills. These roles reflect my belief that technology and financial literacy are keys to personal and national development.
+            <h2 className="text-base font-sans font-bold text-primary mt-10 mb-4 uppercase tracking-wide">Vision & Long-term Goals</h2>
+
+            <p className="text-sm leading-relaxed mb-6">
+              Part of Nestor's long-term vision is to build a tech ecosystem that is accessible, inclusive, and collaborative, where everyone has the opportunity to grow. This vision continues to guide his work, as he intentionally pursues and nurtures it through leadership, community engagement, and technology-driven impact. He believes that technology should empower individuals, organizations, and communities, and that design and innovation should serve humanity.
             </p>
 
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900 mt-12 mb-6">Education & Certifications</h2>
 
-            <p className="text-lg leading-relaxed mb-8">
-              I am currently pursuing a Bachelor of Technology in Computer Science at the Federal University of Technology Owerri (FUTO), where I&apos;ve distinguished myself as a leader in the tech community. My education is complemented by numerous professional certifications including:
-            </p>
-
-            <ul className="space-y-3 mb-8 text-lg leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Certified Virtual Assistant (ALX Nigeria)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Career Essentials in Generative AI (Microsoft & LinkedIn Learning)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>AI Workplace Proficiency Certification (Superhuman AI)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Introduction to Prompt Engineering (Simplilearn)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Introduction to Figma Basics (Simplilearn)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>McKinsey Forward Program (McKinsey & Company)</span>
-              </li>
-            </ul>
-
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900 mt-12 mb-6">Technical Skills & Specializations</h2>
-
-            <p className="text-lg leading-relaxed mb-8">
-              My technical skill set encompasses:
-            </p>
-
-            <ul className="space-y-3 mb-8 text-lg leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span><strong>Design & Creative:</strong> Graphic Design, Figma, Visual Communication, Brand Identity</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span><strong>Technology:</strong> IT Consultation, Information Communication Technology, Tech Stack Management</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span><strong>AI & Emerging Tech:</strong> Prompt Engineering, Generative AI, AI Workplace Applications</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span><strong>Administrative:</strong> Virtual Assistance, Project Coordination, Data Management</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span><strong>Leadership:</strong> Team Management, Community Building, Strategic Planning</span>
-              </li>
-            </ul>
-
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900 mt-12 mb-6">Vision & Impact</h2>
-
-            <p className="text-lg leading-relaxed mb-8">
-              My vision is to bridge the gap between technology and human potential. I believe that through thoughtful design, strategic communication, and genuine community engagement, we can create lasting positive change. Whether through organizing transformative tech events like DevFest Owerri, contributing to open-source communities, or mentoring young professionals, I&apos;m committed to leaving a legacy of impact.
-            </p>
-
-            <p className="text-lg leading-relaxed">
-              Every project I undertake, every community I serve, and every person I connect with is part of a larger mission: to empower individuals and organizations to leverage technology responsibly and creatively. This is the essence of who I am and what drives my professional journey.
-            </p>
           </div>
         </article>
       </main>

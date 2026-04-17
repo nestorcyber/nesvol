@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,9 +32,15 @@ export default function Navigation() {
           {/* Logo on the left */}
           <button
             onClick={() => router.push("/")}
-            className="text-secondary font-sans font-bold text-xl hover:text-accent transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            NA
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo-YsxkUMGzk3nZcZJmumGcRLhbwVu9Fq.png"
+              alt="Nestor Anyanwu Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
           </button>
 
           {/* Navigation on the right - desktop only */}

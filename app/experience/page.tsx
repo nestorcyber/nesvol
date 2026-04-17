@@ -51,32 +51,11 @@ const workExperience = [
     details: ["Progress Management", "Student Engagement", "Financial Education"],
   },
   {
-    title: "Virtual Assistant",
-    organization: "Chinwedu Yagazie",
-    duration: "May 2023 - Jun 2025",
-    description: "Provided comprehensive administrative and operational support, managing schedules, communications, and business coordination.",
-    details: ["Administrative Support", "Communication Management", "Business Coordination"],
-  },
-  {
-    title: "Virtual Assistant",
-    organization: "Nwaturuocha Sisters",
-    duration: "Jul 2023 - Apr 2025",
-    description: "Delivered virtual assistance services including administrative tasks, scheduling, and operational coordination.",
-    details: ["Schedule Management", "Communication", "Task Coordination"],
-  },
-  {
     title: "Graphic Designer",
     organization: "Nobelton Consults",
     duration: "Jan 2023 - Feb 2024",
     description: "Designed visual content and branding materials, creating compelling graphics for marketing and communications.",
     details: ["Graphic Design", "Visual Content", "Brand Development"],
-  },
-  {
-    title: "Data Entry Specialist",
-    organization: "IV-Global Resource Investment Limited",
-    duration: "Sep 2021 - Jan 2023",
-    description: "Managed data entry operations, ensuring accuracy and efficiency in database management and documentation.",
-    details: ["Data Management", "Database Operations", "Administrative Tasks"],
   },
 ]
 
@@ -114,17 +93,17 @@ export default function ExperiencePage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-3xl md:text-4xl font-serif font-600 text-primary mb-6">
-              Work Experience & Leadership
+            <h1 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-6 uppercase tracking-wide">
+              Professional Experience
             </h1>
-            <p className="text-lg text-foreground font-medium max-w-2xl">
-              A comprehensive timeline of professional roles, projects, and community contributions.
+            <p className="text-sm md:text-base text-foreground font-medium max-w-2xl">
+              A timeline of leadership roles, professional experience, and community contributions.
             </p>
           </div>
 
           {/* Work Experience Section */}
           <section className="mb-20">
-            <h2 className="text-2xl font-serif font-600 text-primary mb-10">Professional Experience</h2>
+            <h2 className="text-base font-sans font-bold text-primary mb-10 uppercase tracking-wide">Current & Recent Roles</h2>
             <div className="space-y-6">
               {workExperience.map((exp, idx) => (
                 <Card

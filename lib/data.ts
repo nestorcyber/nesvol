@@ -57,18 +57,17 @@ export const experiences = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle2%280%29-FfRbgx2cSla1HuEuvaPzlOe8rKfEcm.jpg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle4-n7IdoFLGvctWYMK2ZspbSaqYEJz6n7.jpg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle1%280%29-RFztiDFA8wlZ5TUikrNKon6EVYY0te.jpg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fle2-vxhPppzWjtjP9M63pBTb8yALMDUPmb.jpg",
     ],
   },
   {
     id: 14,
     title: "DevFest Owerri 2025",
     organization: "Google Developer Groups Owerri",
-    role: "Organizer, Speaker & Design Team",
+    role: "Major Designer & Events Support",
     date: "November 2025",
     description:
-      "Played a key role in organizing, designing, and speaking at the largest developer festival in South-East Nigeria. Engaged with the community, crafted visual assets, and contributed to the success of the event through active participation and leadership.",
-    images: ["/devfest25-1.jpg", "/devfest25-2.jpg", "/devfest25-3.jpg", "/devfest25-4.jpg"],
+      "Supported the largest developer festival in South-East Nigeria through major design contributions and event logistics. Collaborated with the team to craft visual assets, manage event organization, and ensure a successful community experience.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dev-nnewBVnGcwatonVCQKc9zTtMdshDoM.jpg", "/devfest25-2.jpg", "/devfest25-3.jpg", "/devfest25-4.jpg"],
   },
   {
     id: 7,
@@ -80,26 +79,8 @@ export const experiences = [
       "Served on both the Media and Welfare teams, capturing key moments of the conference while ensuring the comfort and well-being of guests and speakers.",
     images: ["/gire-solo.jpg", "/gire-work.jpg", "/gire-table.jpg", "/gire-hall.jpg"],
   },
-  {
-    id: 1,
-    title: "Gida Skillup Tour Owerri",
-    organization: "Ginakev Digital Academy Gida",
-    role: "Front Desk, Protocol & Event Setup",
-    date: "October 11, 2025",
-    description:
-      "An inspiring experience supporting the Gida Skillup Tour in Owerri — helping with coordination, protocol, and event setup to empower young learners through digital creativity.",
-    images: ["/gida-group-photo.jpg", "/gida-team-moment.jpg", "/gida-large-group.jpg", "/gida-casual-moment.jpg"],
-  },
-  {
-    id: 2,
-    title: "AWS Community Event",
-    organization: "AWS Community",
-    role: "Front Desk and Design",
-    date: "Sept 13, 2025",
-    description:
-      "Collaborated with the AWS community team, supporting event organization and attendee engagement. Focused on creative coordination and smooth event flow.",
-    images: ["/aws-team-moment.jpg", "/aws-team-csc.jpg", "/aws-team.jpg", "/aws-me.jpg"],
-  },
+
+
   {
     id: 4,
     title: "Tech Nexus",
@@ -120,16 +101,7 @@ export const experiences = [
       "Served on the Media Team for the FUTO Alumni Homecoming 2025. Managed live streaming setups (OBS), stage photography, and documented the grand reunion of alumni.",
     images: ["/futo-3.jpg", "/futo-1.jpg", "/futo-4.jpg", "/futo-2.jpg"],
   },
-  {
-    id: 3,
-    title: "Build With AI 2025",
-    organization: "Google Developer group Owerri",
-    role: "Design and Photography",
-    date: "July 26, 2025",
-    description:
-      "Contributing to Build With AI 2025 through design and photography, capturing and creating visual content for the Google Developer group Owerri community. Focused on storytelling and showcasing innovation in AI-driven projects.",
-    images: ["/bwai-team.jpg", "/bwai-me.jpg", "/bwai-imma.jpg", "/bwai-i.jpg"],
-  },
+
   {
     id: 5,
     title: "DevFest Owerri 2024",
