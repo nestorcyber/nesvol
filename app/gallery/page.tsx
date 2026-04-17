@@ -24,8 +24,8 @@ export default function GalleryPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-5xl md:text-5xl font-sans font-bold text-primary mb-6">Gallery</h1>
-            <p className="text-lg text-muted max-w-3xl leading-relaxed">
+            <h1 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-6 uppercase tracking-wide">Gallery</h1>
+            <p className="text-sm md:text-base text-foreground max-w-3xl leading-relaxed">
               A visual collection of moments from volunteering experiences, community events, and meaningful projects that shaped my journey.
             </p>
           </div>

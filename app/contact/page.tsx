@@ -2,7 +2,6 @@
 
 import Footer from "@/components/footer"
 import { Mail, MessageCircle, Linkedin, Twitter, Github, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { FormEvent, useState } from "react"
 
 export default function ContactPage() {
@@ -70,10 +69,10 @@ export default function ContactPage() {
                 {/* Email */}
                 <a
                   href="mailto:nestoranyanwu@gmail.com"
-                  className="p-4 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors group"
+                  className="p-4 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
                   title="Send an email"
                 >
-                  <Mail size={32} className="text-blue-600 group-hover:scale-110 transition-transform" />
+                  <Mail size={32} className="text-primary group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* WhatsApp */}
@@ -81,10 +80,10 @@ export default function ContactPage() {
                   href="https://wa.me/message/GJIXLHQQPYDIE1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-green-100 rounded-lg hover:bg-green-200 transition-colors group"
+                  className="p-4 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
                   title="Message on WhatsApp"
                 >
-                  <MessageCircle size={32} className="text-green-600 group-hover:scale-110 transition-transform" />
+                  <MessageCircle size={32} className="text-primary group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* LinkedIn */}
@@ -92,10 +91,10 @@ export default function ContactPage() {
                   href="https://linkedin.com/in/nestoranyanwu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors group"
+                  className="p-4 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
                   title="Connect on LinkedIn"
                 >
-                  <Linkedin size={32} className="text-blue-600 group-hover:scale-110 transition-transform" />
+                  <Linkedin size={32} className="text-primary group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* Twitter */}
@@ -103,10 +102,10 @@ export default function ContactPage() {
                   href="https://twitter.com/nestorcyber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-sky-100 rounded-lg hover:bg-sky-200 transition-colors group"
+                  className="p-4 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
                   title="Follow on X/Twitter"
                 >
-                  <Twitter size={32} className="text-sky-600 group-hover:scale-110 transition-transform" />
+                  <Twitter size={32} className="text-primary group-hover:scale-110 transition-transform" />
                 </a>
 
                 {/* GitHub */}
@@ -114,10 +113,10 @@ export default function ContactPage() {
                   href="https://github.com/nestorcyber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-slate-100 rounded-lg hover:bg-slate-200 transition-colors group"
+                  className="p-4 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
                   title="View GitHub profile"
                 >
-                  <Github size={32} className="text-slate-900 group-hover:scale-110 transition-transform" />
+                  <Github size={32} className="text-primary group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
@@ -128,7 +127,7 @@ export default function ContactPage() {
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
                     Name
                   </label>
                   <input
@@ -138,13 +137,13 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
                     Email
                   </label>
                   <input
@@ -154,13 +153,13 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
                     Message
                   </label>
                   <textarea
@@ -170,31 +169,31 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
                     placeholder="Tell me about your project or inquiry..."
                   />
                 </div>
 
                 {submitStatus === "success" && (
-                  <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                    <p className="text-green-700 font-semibold">Message sent successfully! I&apos;ll get back to you soon.</p>
+                  <div className="p-4 bg-primary/10 border border-primary rounded-lg">
+                    <p className="text-primary font-semibold">Message sent successfully! I&apos;ll get back to you soon.</p>
                   </div>
                 )}
 
                 {submitStatus === "error" && (
-                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-700 font-semibold">There was an error sending your message. Please try again.</p>
+                  <div className="p-4 bg-red-100/50 border border-red-300 rounded-lg">
+                    <p className="text-red-900 font-semibold">There was an error sending your message. Please try again.</p>
                   </div>
                 )}
 
-                <Button
+                <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all"
+                  className="w-full bg-primary hover:bg-primary/90 text-secondary font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                   {!isSubmitting && <Send size={18} />}
-                </Button>
+                </button>
               </form>
             </div>
           </div>

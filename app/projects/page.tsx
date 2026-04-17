@@ -87,7 +87,7 @@ export default function ProjectsPage() {
 
           {/* Design Portfolio Card */}
           <div className="p-8 md:p-10 border-2 border-primary hover:border-accent transition-colors duration-300 flex flex-col bg-background rounded-lg text-center">
-            <h3 className="text-2xl font-sans font-bold text-primary mb-4 uppercase tracking-wide">Explore Design Work</h3>
+            <h3 className="text-lg font-sans font-bold text-primary mb-4 uppercase tracking-wide">Explore Design Work</h3>
             <p className="text-sm text-foreground leading-relaxed mb-8 font-medium max-w-xl mx-auto">
               View my comprehensive design portfolio showcasing branding, digital design, visual identity, and creative projects.
             </p>
